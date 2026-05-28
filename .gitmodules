@@ -1,0 +1,3 @@
+[submodule "dwd-downloader"]
+	path = dwd-downloader
+	url = https://github.com/unsortedstuff/dwd-downloader.git
