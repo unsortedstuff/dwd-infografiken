@@ -78,6 +78,16 @@ python3 dwd_hitzetage_infografik.py
 
 Die Grafiken werden im Verzeichnis `output/` (Unterordner des aktuellen Verzeichnisses) abgelegt.
 
+### GitHub Pages Karte aktualisieren
+
+Die statische Webseite in `index.html` zeigt alle Infografiken aus `output/` auf einer Karte. Die Marker-Daten werden aus `output/*.png` und `dwd_cache/station_names.csv` erzeugt:
+
+```bash
+python3 scripts/build_pages_data.py
+```
+
+Danach kann GitHub Pages direkt aus dem Branch `main` und dem Repository-Root veröffentlicht werden. Beim Klick auf einen Marker öffnet sich rechts die passende Infografik.
+
 ### Einzelne Station (Beispiel Aurich)
 
 ```bash

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DWD Hitzetage-Infografiken</title>
+    <link rel="preconnect" href="https://unpkg.com">
+    <link rel="preconnect" href="https://tile.openstreetmap.org">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIINfQPDZTOXzUtHdC84F2GtGU6xR9HY9w8="
+      crossorigin=""
+    >
+    <link rel="stylesheet" href="assets/styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <h1>DWD Hitzetage-Infografiken</h1>
+        <p>Wetterstationen mit erzeugter Infografik im Ordner <code>output</code></p>
+      </div>
+      <div class="summary" aria-live="polite">
+        <strong id="station-count">-</strong>
+        <span>Stationen</span>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="map-panel" aria-label="Karte der Wetterstationen">
+        <div id="map"></div>
+      </section>
+      <aside class="detail-panel" aria-label="Ausgewählte Infografik">
+        <div class="empty-state" id="empty-state">
+          <h2>Station auswählen</h2>
+          <p>Ein Marker zeigt die Infografik der jeweiligen DWD-Wetterstation.</p>
+        </div>
+        <article class="station-card is-hidden" id="station-card">
+          <div class="station-meta">
+            <p id="station-state"></p>
+            <h2 id="station-name"></h2>
+            <dl>
+              <div>
+                <dt>Stations-ID</dt>
+                <dd id="station-id"></dd>
+              </div>
+              <div>
+                <dt>Höhe</dt>
+                <dd id="station-height"></dd>
+              </div>
+            </dl>
+          </div>
+          <a id="image-link" href="#" target="_blank" rel="noopener">
+            <img id="station-image" alt="">
+          </a>
+        </article>
+      </aside>
+    </main>
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="assets/app.js"></script>
+  </body>
+</html>
