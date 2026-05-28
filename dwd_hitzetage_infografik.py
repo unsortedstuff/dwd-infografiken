@@ -156,8 +156,19 @@ def get_station_name(station_id):
 def generate_all_stations():
     """Generiere Infografiken für alle Stationen im Cache mit ausreichend Daten."""
     import os
-    output_dir = Path("dwd_infografiken")
+    output_dir = Path("output")
     output_dir.mkdir(exist_ok=True)
+
+    # Stationsliste mit Bundesland laden
+    station_list_file = CACHE_DIR / "station_names.csv"
+    if station_list_file.exists():
+        station_df = pd.read_csv(station_list_file, dtype={'station_id': str})
+        station_df['station_id'] = station_df['station_id'].str.zfill(5)
+        # Clean trailing whitespace and "Frei" suffix from bundesland
+        station_df['bundesland'] = station_df['bundesland'].str.strip().str.replace(r'\s+Frei$', '', regex=True)
+        station_df['name'] = station_df['name'].str.strip()
+    else:
+        station_df = pd.DataFrame()
 
     hist_files = sorted(CACHE_DIR.glob("*_hist.parquet"))
     generated = 0
@@ -176,8 +187,17 @@ def generate_all_stations():
             skipped += 1
             continue
 
-        station_name = get_station_name(sid)
-        output_file = output_dir / f"dwd_hitzetage_{sid}_{station_name.lower().replace(' ', '_').replace('/', '_')}.png"
+        # Name und Bundesland aus Stationsliste
+        station_name = sid
+        bundesland = ""
+        if not station_df.empty:
+            row = station_df[station_df['station_id'] == sid]
+            if not row.empty:
+                station_name = row.iloc[0]['name']
+                bundesland = row.iloc[0]['bundesland']
+        name_clean = station_name.lower().replace(' ', '_').replace('/', '_').replace(',', '').replace('"', '')
+        bl_clean = bundesland.lower().replace(' ', '-').replace('ü', 'ue').replace('ö', 'oe').replace('ä', 'ae') if bundesland else ''
+        output_file = output_dir / f"dwd_hitzetage_{sid}_{name_clean}_{bl_clean}.png"
 
         print(f"\n=== {station_name} ({sid}) ===")
         create_infographic(
@@ -189,7 +209,7 @@ def generate_all_stations():
 
     print(f"\n{'='*50}")
     print(f"Fertig! {generated} Infografiken erstellt, {skipped} Stationen übersprungen.")
-    print(f"Ausgabeordner: {output_dir}/")
+    print(f"Ausgabeordner: {output_dir.resolve()}/")
 
 
 if __name__ == '__main__':

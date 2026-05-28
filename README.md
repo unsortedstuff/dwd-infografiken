@@ -28,6 +28,7 @@ source venv/bin/activate   # Linux/macOS
 # venv\Scripts\activate    # Windows
 
 pip install -r requirements.txt
+pip install -r dwd-downloader/requirements.txt 
 ```
 
 Falls bereits geklont ohne Submodules:
@@ -42,16 +43,16 @@ Der Downloader ist als Git-Submodul eingebunden ([dwd-downloader](https://github
 
 ```bash
 # Alle Stationen mit Daten ab 1950 herunterladen
-python dwd-downloader/dwd_download.py
+python3 dwd-downloader/dwd_download.py
 
 # Stationen mit Daten ab 1900
-python dwd-downloader/dwd_download.py --seit 1900
+python3 dwd-downloader/dwd_download.py --seit 1900
 
 # Nur eine bestimmte Station
-python dwd-downloader/dwd_download.py --station 00433
+python3 dwd-downloader/dwd_download.py --station 00433
 
 # Cache überschreiben (erneuter Download)
-python dwd-downloader/dwd_download.py --force
+python3 dwd-downloader/dwd_download.py --force
 ```
 
 Pro Station werden zwei Parquet-Dateien angelegt:
@@ -72,15 +73,15 @@ Datenquelle: https://opendata.dwd.de/climate_environment/CDC/observations_german
 Erstellt Infografiken für alle Stationen im Cache, die ausreichend lange Messreihen haben (Daten ab spätestens 1965, mindestens bis 2020):
 
 ```bash
-python dwd_hitzetage_infografik.py
+python3 dwd_hitzetage_infografik.py
 ```
 
-Die Grafiken werden im Verzeichnis `dwd_infografiken/` (Unterordner des aktuellen Verzeichnisses) abgelegt.
+Die Grafiken werden im Verzeichnis `output/` (Unterordner des aktuellen Verzeichnisses) abgelegt.
 
 ### Einzelne Station (Beispiel Aurich)
 
 ```bash
-python dwd_hitzetage_infografik.py --aurich
+python3 dwd_hitzetage_infografik.py --aurich
 ```
 
 ## Ausgabe
@@ -88,7 +89,7 @@ python dwd_hitzetage_infografik.py --aurich
 Pro Station wird eine PNG-Datei (1000×1000 px bei 200 dpi) erzeugt:
 
 ```
-dwd_hitzetage_<stations_id>_<stationsname>.png
+dwd_hitzetage_<stations_id>_<stationsname>_<bundesland>.png
 ```
 
 Die Grafiken sind als Social-Media-taugliche Infografiken gestaltet mit:
@@ -106,7 +107,7 @@ dwd-infografiken/
 ├── .gitignore
 ├── README.md
 ├── dwd_cache/                    # Stationsdaten (nicht im Repo)
-└── dwd_infografiken/             # Erzeugte Infografiken
+└── output/                       # Erzeugte Infografiken
 ```
 
 ## Lizenz
