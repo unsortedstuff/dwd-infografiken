@@ -33,8 +33,8 @@ function markerIcon(active = false) {
   return L.divIcon({
     className: "",
     html: `<span class="station-marker${active ? " is-active" : ""}"></span>`,
-    iconSize: [18, 18],
-    iconAnchor: [9, 9],
+    iconSize: [24, 24],
+    iconAnchor: [12, 24],
   });
 }
 
