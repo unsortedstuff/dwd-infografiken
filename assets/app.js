@@ -5,7 +5,9 @@ const map = L.map("map", {
 
 L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
   maxZoom: 18,
-  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+  attribution:
+    '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &middot; ' +
+    'Daten: <a href="https://opendata.dwd.de/">Deutscher Wetterdienst (DWD)</a> (GeoNutzV)',
 }).addTo(map);
 
 const countEl = document.querySelector("#station-count");

@@ -153,7 +153,9 @@ HTML_TEMPLATE = """<!doctype html>
 const DATA = __DATA__;
 const map = L.map('map').setView([51.2, 10.4], 6);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  maxZoom: 18, attribution: '© OpenStreetMap'
+  maxZoom: 18,
+  attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> · '
+    + 'Daten: <a href="https://opendata.dwd.de/">Deutscher Wetterdienst (DWD)</a> (GeoNutzV)'
 }).addTo(map);
 
 function color(c) {
