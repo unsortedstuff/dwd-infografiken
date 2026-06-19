@@ -133,7 +133,11 @@ HTML_TEMPLATE = """<!doctype html>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
 <style>
   html, body { margin: 0; height: 100%; font-family: system-ui, sans-serif; }
-  #map { height: 100%; width: 100%; }
+  body { display: flex; flex-direction: column; }
+  #map { flex: 1; min-height: 0; width: 100%; }
+  .credits { padding: 8px 14px; font-size: 12px; color: #555; background: #f4f4f5;
+    border-top: 1px solid #e3e3e6; }
+  .credits a { color: #555; }
   .legend { background: #fff; padding: 8px 10px; border-radius: 6px;
     box-shadow: 0 1px 4px rgba(0,0,0,.3); font-size: 13px; line-height: 1.5; }
   .legend i { display: inline-block; width: 14px; height: 14px; margin-right: 6px;
@@ -148,6 +152,12 @@ HTML_TEMPLATE = """<!doctype html>
 </head>
 <body>
 <div id="map"></div>
+<footer class="credits">
+  Hitzetage ≥ 30 °C · Zeitraum __START__ bis __END__ ·
+  Datenquelle: <a href="https://opendata.dwd.de/" target="_blank" rel="noopener">Deutscher Wetterdienst (DWD)</a>,
+  Klimadaten Deutschland (<a href="https://www.gesetze-im-internet.de/geonutzv/" target="_blank" rel="noopener">GeoNutzV</a>) ·
+  Karte: <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>
+</footer>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const DATA = __DATA__;
