@@ -62,11 +62,12 @@ function selectStation(station, marker) {
   const src = imageUrl(station.image);
   imageLink.href = src;
   imageEl.src = src;
-  imageEl.alt = `Infografik Heiße Tage in ${station.name}`;
+  imageEl.alt = `Infografik ${station.name}`;
 }
 
 async function init() {
-  const response = await fetch("assets/stations.json");
+  const dataFile = window.STATIONS_DATA || "assets/stations.json";
+  const response = await fetch(dataFile);
   if (!response.ok) {
     throw new Error(`Stationsdaten konnten nicht geladen werden: ${response.status}`);
   }

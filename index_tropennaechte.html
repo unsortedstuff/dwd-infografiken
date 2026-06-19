@@ -3,12 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>DWD Hitzetage-Infografiken</title>
-    <script>
-      if (!location.pathname.endsWith("/") && !location.pathname.split("/").pop().includes(".")) {
-        location.replace(`${location.pathname}/${location.search}${location.hash}`);
-      }
-    </script>
+    <title>DWD Tropennächte-Infografiken</title>
     <link rel="preconnect" href="https://unpkg.com">
     <link rel="preconnect" href="https://tile.openstreetmap.org">
     <link
@@ -21,8 +16,8 @@
   <body>
     <header class="topbar">
       <div>
-        <h1>DWD Hitzetage-Infografiken</h1>
-        <p>Heiße Tage (≥ 30 °C) · <a href="index_tropennaechte.html">Tropennächte ansehen →</a></p>
+        <h1>DWD Tropennächte-Infografiken</h1>
+        <p>Nächte mit Tiefsttemperatur ≥ 20 °C · <a href="index.html">← Hitzetage ansehen</a></p>
       </div>
       <div class="summary" aria-live="polite">
         <strong id="station-count">-</strong>
@@ -37,7 +32,7 @@
       <aside class="detail-panel" aria-label="Ausgewählte Infografik">
         <div class="empty-state" id="empty-state">
           <h2>Station auswählen</h2>
-          <p>Ein Marker zeigt die Infografik der jeweiligen DWD-Wetterstation.</p>
+          <p>Ein Marker zeigt die Tropennächte-Infografik der jeweiligen DWD-Wetterstation.</p>
         </div>
         <article class="station-card is-hidden" id="station-card">
           <div class="station-meta">
@@ -74,7 +69,7 @@
       src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
       crossorigin=""
     ></script>
-    <script>window.STATIONS_DATA = "assets/stations.json";</script>
+    <script>window.STATIONS_DATA = "assets/stations_tropennaechte.json";</script>
     <script src="assets/app.js"></script>
   </body>
 </html>

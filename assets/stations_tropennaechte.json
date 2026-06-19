@@ -1,0 +1,1469 @@
+[
+  {
+    "id": "00151",
+    "name": "Amberg-Unterammersricht",
+    "state": "Bayern",
+    "height": 382,
+    "lat": 49.4691,
+    "lon": 11.8546,
+    "image": "output/dwd_tropennaechte_00151_amberg-unterammersricht_bayern.png"
+  },
+  {
+    "id": "00164",
+    "name": "Angermünde",
+    "state": "Brandenburg",
+    "height": 54,
+    "lat": 53.0316,
+    "lon": 13.9908,
+    "image": "output/dwd_tropennaechte_00164_angermünde_brandenburg.png"
+  },
+  {
+    "id": "00183",
+    "name": "Arkona",
+    "state": "Mecklenburg-Vorpommern",
+    "height": 42,
+    "lat": 54.6791,
+    "lon": 13.4344,
+    "image": "output/dwd_tropennaechte_00183_arkona_mecklenburg-vorpommern.png"
+  },
+  {
+    "id": "00217",
+    "name": "Attenkam",
+    "state": "Bayern",
+    "height": 670,
+    "lat": 47.8774,
+    "lon": 11.3643,
+    "image": "output/dwd_tropennaechte_00217_attenkam_bayern.png"
+  },
+  {
+    "id": "00232",
+    "name": "Augsburg",
+    "state": "Bayern",
+    "height": 462,
+    "lat": 48.4253,
+    "lon": 10.9417,
+    "image": "output/dwd_tropennaechte_00232_augsburg_bayern.png"
+  },
+  {
+    "id": "00257",
+    "name": "Baden-Baden-Geroldsau",
+    "state": "Baden-Württemberg",
+    "height": 240,
+    "lat": 48.727,
+    "lon": 8.2457,
+    "image": "output/dwd_tropennaechte_00257_baden-baden-geroldsau_baden-wuerttemberg.png"
+  },
+  {
+    "id": "00259",
+    "name": "Müllheim",
+    "state": "Baden-Württemberg",
+    "height": 275,
+    "lat": 47.8064,
+    "lon": 7.6387,
+    "image": "output/dwd_tropennaechte_00259_müllheim_baden-wuerttemberg.png"
+  },
+  {
+    "id": "00282",
+    "name": "Bamberg",
+    "state": "Bayern",
+    "height": 240,
+    "lat": 49.8743,
+    "lon": 10.9206,
+    "image": "output/dwd_tropennaechte_00282_bamberg_bayern.png"
+  },
+  {
+    "id": "00298",
+    "name": "Barth",
+    "state": "Mecklenburg-Vorpommern",
+    "height": 3,
+    "lat": 54.3405,
+    "lon": 12.7108,
+    "image": "output/dwd_tropennaechte_00298_barth_mecklenburg-vorpommern.png"
+  },
+  {
+    "id": "00314",
+    "name": "Kubschütz, Kr. Bautzen",
+    "state": "Sachsen",
+    "height": 234,
+    "lat": 51.1604,
+    "lon": 14.5042,
+    "image": "output/dwd_tropennaechte_00314_kubschütz_kr._bautzen_sachsen.png"
+  },
+  {
+    "id": "00320",
+    "name": "Heinersreuth-Vollhof",
+    "state": "Bayern",
+    "height": 350,
+    "lat": 49.9666,
+    "lon": 11.5198,
+    "image": "output/dwd_tropennaechte_00320_heinersreuth-vollhof_bayern.png"
+  },
+  {
+    "id": "00330",
+    "name": "Oberzent-Beerfelden",
+    "state": "Hessen",
+    "height": 455,
+    "lat": 49.5617,
+    "lon": 8.9673,
+    "image": "output/dwd_tropennaechte_00330_oberzent-beerfelden_hessen.png"
+  },
+  {
+    "id": "00377",
+    "name": "Bergzabern, Bad",
+    "state": "Rheinland-Pfalz",
+    "height": 210,
+    "lat": 49.107,
+    "lon": 7.9967,
+    "image": "output/dwd_tropennaechte_00377_bergzabern_bad_rheinland-pfalz.png"
+  },
+  {
+    "id": "00403",
+    "name": "Berlin-Dahlem (FU)",
+    "state": "Berlin",
+    "height": 51,
+    "lat": 52.4537,
+    "lon": 13.3017,
+    "image": "output/dwd_tropennaechte_00403_berlin-dahlem_(fu)_berlin.png"
+  },
+  {
+    "id": "00433",
+    "name": "Berlin-Tempelhof",
+    "state": "Berlin",
+    "height": 48,
+    "lat": 52.4676,
+    "lon": 13.402,
+    "image": "output/dwd_tropennaechte_00433_berlin-tempelhof_berlin.png"
+  },
+  {
+    "id": "00445",
+    "name": "Bernburg/Saale (Nord)",
+    "state": "Sachsen-Anhalt",
+    "height": 85,
+    "lat": 51.8218,
+    "lon": 11.711,
+    "image": "output/dwd_tropennaechte_00445_bernburg_saale_(nord)_sachsen-anhalt.png"
+  },
+  {
+    "id": "00535",
+    "name": "Blankenrath",
+    "state": "Rheinland-Pfalz",
+    "height": 417,
+    "lat": 50.0372,
+    "lon": 7.3079,
+    "image": "output/dwd_tropennaechte_00535_blankenrath_rheinland-pfalz.png"
+  },
+  {
+    "id": "00555",
+    "name": "Bochum",
+    "state": "Nordrhein-Westfalen",
+    "height": 110,
+    "lat": 51.5026,
+    "lon": 7.2289,
+    "image": "output/dwd_tropennaechte_00555_bochum_nordrhein-westfalen.png"
+  },
+  {
+    "id": "00591",
+    "name": "Boizenburg",
+    "state": "Mecklenburg-Vorpommern",
+    "height": 45,
+    "lat": 53.3911,
+    "lon": 10.6878,
+    "image": "output/dwd_tropennaechte_00591_boizenburg_mecklenburg-vorpommern.png"
+  },
+  {
+    "id": "00596",
+    "name": "Boltenhagen",
+    "state": "Mecklenburg-Vorpommern",
+    "height": 15,
+    "lat": 54.0027,
+    "lon": 11.1908,
+    "image": "output/dwd_tropennaechte_00596_boltenhagen_mecklenburg-vorpommern.png"
+  },
+  {
+    "id": "00656",
+    "name": "Braunlage",
+    "state": "Niedersachsen",
+    "height": 607,
+    "lat": 51.7234,
+    "lon": 10.6021,
+    "image": "output/dwd_tropennaechte_00656_braunlage_niedersachsen.png"
+  },
+  {
+    "id": "00691",
+    "name": "Bremen",
+    "state": "Bremen",
+    "height": 4,
+    "lat": 53.0451,
+    "lon": 8.7981,
+    "image": "output/dwd_tropennaechte_00691_bremen_bremen.png"
+  },
+  {
+    "id": "00701",
+    "name": "Bremerhaven",
+    "state": "Bremen",
+    "height": 7,
+    "lat": 53.5332,
+    "lon": 8.5761,
+    "image": "output/dwd_tropennaechte_00701_bremerhaven_bremen.png"
+  },
+  {
+    "id": "00722",
+    "name": "Brocken",
+    "state": "Sachsen-Anhalt",
+    "height": 1135,
+    "lat": 51.7986,
+    "lon": 10.6183,
+    "image": "output/dwd_tropennaechte_00722_brocken_sachsen-anhalt.png"
+  },
+  {
+    "id": "00755",
+    "name": "Buchen, Kr. Neckar-Odenwald",
+    "state": "Baden-Württemberg",
+    "height": 340,
+    "lat": 49.5182,
+    "lon": 9.3213,
+    "image": "output/dwd_tropennaechte_00755_buchen_kr._neckar-odenwald_baden-wuerttemberg.png"
+  },
+  {
+    "id": "00853",
+    "name": "Chemnitz",
+    "state": "Sachsen",
+    "height": 416,
+    "lat": 50.7913,
+    "lon": 12.872,
+    "image": "output/dwd_tropennaechte_00853_chemnitz_sachsen.png"
+  },
+  {
+    "id": "00867",
+    "name": "Lautertal-Oberlauter",
+    "state": "Bayern",
+    "height": 344,
+    "lat": 50.3066,
+    "lon": 10.9679,
+    "image": "output/dwd_tropennaechte_00867_lautertal-oberlauter_bayern.png"
+  },
+  {
+    "id": "00880",
+    "name": "Cottbus",
+    "state": "Brandenburg",
+    "height": 69,
+    "lat": 51.7759,
+    "lon": 14.3168,
+    "image": "output/dwd_tropennaechte_00880_cottbus_brandenburg.png"
+  },
+  {
+    "id": "00891",
+    "name": "Cuxhaven",
+    "state": "Niedersachsen",
+    "height": 5,
+    "lat": 53.8712,
+    "lon": 8.7058,
+    "image": "output/dwd_tropennaechte_00891_cuxhaven_niedersachsen.png"
+  },
+  {
+    "id": "00896",
+    "name": "Dachwig",
+    "state": "Thüringen",
+    "height": 170,
+    "lat": 51.0778,
+    "lon": 10.8619,
+    "image": "output/dwd_tropennaechte_00896_dachwig_thueringen.png"
+  },
+  {
+    "id": "01001",
+    "name": "Doberlug-Kirchhain",
+    "state": "Brandenburg",
+    "height": 97,
+    "lat": 51.6451,
+    "lon": 13.5747,
+    "image": "output/dwd_tropennaechte_01001_doberlug-kirchhain_brandenburg.png"
+  },
+  {
+    "id": "01048",
+    "name": "Dresden-Klotzsche",
+    "state": "Sachsen",
+    "height": 228,
+    "lat": 51.1278,
+    "lon": 13.7543,
+    "image": "output/dwd_tropennaechte_01048_dresden-klotzsche_sachsen.png"
+  },
+  {
+    "id": "01050",
+    "name": "Dresden-Hosterwitz",
+    "state": "Sachsen",
+    "height": 112,
+    "lat": 51.0221,
+    "lon": 13.847,
+    "image": "output/dwd_tropennaechte_01050_dresden-hosterwitz_sachsen.png"
+  },
+  {
+    "id": "01197",
+    "name": "Ellwangen-Rindelbach",
+    "state": "Baden-Württemberg",
+    "height": 463,
+    "lat": 48.9895,
+    "lon": 10.1312,
+    "image": "output/dwd_tropennaechte_01197_ellwangen-rindelbach_baden-wuerttemberg.png"
+  },
+  {
+    "id": "01207",
+    "name": "Elster, Bad-Sohl",
+    "state": "Sachsen",
+    "height": 558,
+    "lat": 50.2705,
+    "lon": 12.2742,
+    "image": "output/dwd_tropennaechte_01207_elster_bad-sohl_sachsen.png"
+  },
+  {
+    "id": "01279",
+    "name": "Möhrendorf-Kleinseebach",
+    "state": "Bayern",
+    "height": 268,
+    "lat": 49.6497,
+    "lon": 11.0075,
+    "image": "output/dwd_tropennaechte_01279_möhrendorf-kleinseebach_bayern.png"
+  },
+  {
+    "id": "01297",
+    "name": "Eschwege",
+    "state": "Hessen",
+    "height": 156,
+    "lat": 51.2041,
+    "lon": 10.0138,
+    "image": "output/dwd_tropennaechte_01297_eschwege_hessen.png"
+  },
+  {
+    "id": "01300",
+    "name": "Eslohe",
+    "state": "Nordrhein-Westfalen",
+    "height": 351,
+    "lat": 51.254,
+    "lon": 8.1565,
+    "image": "output/dwd_tropennaechte_01300_eslohe_nordrhein-westfalen.png"
+  },
+  {
+    "id": "01303",
+    "name": "Essen-Bredeney",
+    "state": "Nordrhein-Westfalen",
+    "height": 150,
+    "lat": 51.4041,
+    "lon": 6.9677,
+    "image": "output/dwd_tropennaechte_01303_essen-bredeney_nordrhein-westfalen.png"
+  },
+  {
+    "id": "01327",
+    "name": "Weilerswist-Lommersum",
+    "state": "Nordrhein-Westfalen",
+    "height": 147,
+    "lat": 50.7119,
+    "lon": 6.7905,
+    "image": "output/dwd_tropennaechte_01327_weilerswist-lommersum_nordrhein-westfalen.png"
+  },
+  {
+    "id": "01346",
+    "name": "Feldberg/Schwarzwald",
+    "state": "Baden-Württemberg",
+    "height": 1486,
+    "lat": 47.8748,
+    "lon": 8.0038,
+    "image": "output/dwd_tropennaechte_01346_feldberg_schwarzwald_baden-wuerttemberg.png"
+  },
+  {
+    "id": "01357",
+    "name": "Fichtelberg/Oberfranken-Hüttstadl",
+    "state": "Bayern",
+    "height": 655,
+    "lat": 49.9807,
+    "lon": 11.8376,
+    "image": "output/dwd_tropennaechte_01357_fichtelberg_oberfranken-hüttstadl_bayern.png"
+  },
+  {
+    "id": "01358",
+    "name": "Fichtelberg",
+    "state": "Sachsen",
+    "height": 1213,
+    "lat": 50.4283,
+    "lon": 12.9536,
+    "image": "output/dwd_tropennaechte_01358_fichtelberg_sachsen.png"
+  },
+  {
+    "id": "01411",
+    "name": "Birx/Rhön",
+    "state": "Thüringen",
+    "height": 747,
+    "lat": 50.5309,
+    "lon": 10.0479,
+    "image": "output/dwd_tropennaechte_01411_birx_rhön_thueringen.png"
+  },
+  {
+    "id": "01420",
+    "name": "Frankfurt/Main",
+    "state": "Hessen",
+    "height": 100,
+    "lat": 50.0259,
+    "lon": 8.5213,
+    "image": "output/dwd_tropennaechte_01420_frankfurt_main_hessen.png"
+  },
+  {
+    "id": "01443",
+    "name": "Freiburg",
+    "state": "Baden-Württemberg",
+    "height": 237,
+    "lat": 48.0232,
+    "lon": 7.8343,
+    "image": "output/dwd_tropennaechte_01443_freiburg_baden-wuerttemberg.png"
+  },
+  {
+    "id": "01468",
+    "name": "Freudenstadt",
+    "state": "Baden-Württemberg",
+    "height": 797,
+    "lat": 48.4538,
+    "lon": 8.409,
+    "image": "output/dwd_tropennaechte_01468_freudenstadt_baden-wuerttemberg.png"
+  },
+  {
+    "id": "01503",
+    "name": "Friesoythe-Altenoythe",
+    "state": "Niedersachsen",
+    "height": 6,
+    "lat": 53.0643,
+    "lon": 7.902,
+    "image": "output/dwd_tropennaechte_01503_friesoythe-altenoythe_niedersachsen.png"
+  },
+  {
+    "id": "01526",
+    "name": "Fulda-Horas",
+    "state": "Hessen",
+    "height": 245,
+    "lat": 50.5668,
+    "lon": 9.6532,
+    "image": "output/dwd_tropennaechte_01526_fulda-horas_hessen.png"
+  },
+  {
+    "id": "01544",
+    "name": "Gardelegen",
+    "state": "Sachsen-Anhalt",
+    "height": 47,
+    "lat": 52.5129,
+    "lon": 11.3942,
+    "image": "output/dwd_tropennaechte_01544_gardelegen_sachsen-anhalt.png"
+  },
+  {
+    "id": "01550",
+    "name": "Garmisch-Partenkirchen",
+    "state": "Bayern",
+    "height": 719,
+    "lat": 47.483,
+    "lon": 11.0621,
+    "image": "output/dwd_tropennaechte_01550_garmisch-partenkirchen_bayern.png"
+  },
+  {
+    "id": "01580",
+    "name": "Geisenheim",
+    "state": "Hessen",
+    "height": 111,
+    "lat": 49.9859,
+    "lon": 7.9548,
+    "image": "output/dwd_tropennaechte_01580_geisenheim_hessen.png"
+  },
+  {
+    "id": "01639",
+    "name": "Gießen/Wettenberg",
+    "state": "Hessen",
+    "height": 203,
+    "lat": 50.6017,
+    "lon": 8.6439,
+    "image": "output/dwd_tropennaechte_01639_gießen_wettenberg_hessen.png"
+  },
+  {
+    "id": "01645",
+    "name": "Gilserberg-Moischeid",
+    "state": "Hessen",
+    "height": 327,
+    "lat": 50.9656,
+    "lon": 9.05,
+    "image": "output/dwd_tropennaechte_01645_gilserberg-moischeid_hessen.png"
+  },
+  {
+    "id": "01684",
+    "name": "Görlitz",
+    "state": "Sachsen",
+    "height": 239,
+    "lat": 51.1621,
+    "lon": 14.9506,
+    "image": "output/dwd_tropennaechte_01684_görlitz_sachsen.png"
+  },
+  {
+    "id": "01691",
+    "name": "Göttingen",
+    "state": "Niedersachsen",
+    "height": 167,
+    "lat": 51.5002,
+    "lon": 9.9507,
+    "image": "output/dwd_tropennaechte_01691_göttingen_niedersachsen.png"
+  },
+  {
+    "id": "01694",
+    "name": "Goldberg",
+    "state": "Mecklenburg-Vorpommern",
+    "height": 59,
+    "lat": 53.6058,
+    "lon": 12.1034,
+    "image": "output/dwd_tropennaechte_01694_goldberg_mecklenburg-vorpommern.png"
+  },
+  {
+    "id": "01757",
+    "name": "Greifswald",
+    "state": "Mecklenburg-Vorpommern",
+    "height": 2,
+    "lat": 54.0967,
+    "lon": 13.4056,
+    "image": "output/dwd_tropennaechte_01757_greifswald_mecklenburg-vorpommern.png"
+  },
+  {
+    "id": "01759",
+    "name": "Greifswalder Oie",
+    "state": "Mecklenburg-Vorpommern",
+    "height": 11,
+    "lat": 54.2437,
+    "lon": 13.9104,
+    "image": "output/dwd_tropennaechte_01759_greifswalder_oie_mecklenburg-vorpommern.png"
+  },
+  {
+    "id": "01803",
+    "name": "Sanitz-Groß Lüsewitz",
+    "state": "Mecklenburg-Vorpommern",
+    "height": 35,
+    "lat": 54.0714,
+    "lon": 12.3238,
+    "image": "output/dwd_tropennaechte_01803_sanitz-groß_lüsewitz_mecklenburg-vorpommern.png"
+  },
+  {
+    "id": "01975",
+    "name": "Hamburg-Fuhlsbüttel",
+    "state": "Hamburg",
+    "height": 11,
+    "lat": 53.6332,
+    "lon": 9.9881,
+    "image": "output/dwd_tropennaechte_01975_hamburg-fuhlsbüttel_hamburg.png"
+  },
+  {
+    "id": "02014",
+    "name": "Hannover",
+    "state": "Niedersachsen",
+    "height": 55,
+    "lat": 52.4644,
+    "lon": 9.6779,
+    "image": "output/dwd_tropennaechte_02014_hannover_niedersachsen.png"
+  },
+  {
+    "id": "02039",
+    "name": "Harzburg, Bad",
+    "state": "Niedersachsen",
+    "height": 203,
+    "lat": 51.9002,
+    "lon": 10.5699,
+    "image": "output/dwd_tropennaechte_02039_harzburg_bad_niedersachsen.png"
+  },
+  {
+    "id": "02044",
+    "name": "Harzgerode",
+    "state": "Sachsen-Anhalt",
+    "height": 404,
+    "lat": 51.652,
+    "lon": 11.1366,
+    "image": "output/dwd_tropennaechte_02044_harzgerode_sachsen-anhalt.png"
+  },
+  {
+    "id": "02074",
+    "name": "Hechingen",
+    "state": "Baden-Württemberg",
+    "height": 518,
+    "lat": 48.3752,
+    "lon": 8.98,
+    "image": "output/dwd_tropennaechte_02074_hechingen_baden-wuerttemberg.png"
+  },
+  {
+    "id": "02171",
+    "name": "Hersfeld, Bad",
+    "state": "Hessen",
+    "height": 272,
+    "lat": 50.852,
+    "lon": 9.7377,
+    "image": "output/dwd_tropennaechte_02171_hersfeld_bad_hessen.png"
+  },
+  {
+    "id": "02201",
+    "name": "Hiddensee-Vitte",
+    "state": "Mecklenburg-Vorpommern",
+    "height": 1,
+    "lat": 54.575,
+    "lon": 13.1044,
+    "image": "output/dwd_tropennaechte_02201_hiddensee-vitte_mecklenburg-vorpommern.png"
+  },
+  {
+    "id": "02211",
+    "name": "Hilgenroth",
+    "state": "Rheinland-Pfalz",
+    "height": 295,
+    "lat": 50.737,
+    "lon": 7.6525,
+    "image": "output/dwd_tropennaechte_02211_hilgenroth_rheinland-pfalz.png"
+  },
+  {
+    "id": "02252",
+    "name": "Bertsdorf-Hörnitz",
+    "state": "Sachsen",
+    "height": 271,
+    "lat": 50.8992,
+    "lon": 14.7456,
+    "image": "output/dwd_tropennaechte_02252_bertsdorf-hörnitz_sachsen.png"
+  },
+  {
+    "id": "02261",
+    "name": "Hof",
+    "state": "Bayern",
+    "height": 565,
+    "lat": 50.3123,
+    "lon": 11.876,
+    "image": "output/dwd_tropennaechte_02261_hof_bayern.png"
+  },
+  {
+    "id": "02290",
+    "name": "Hohenpeißenberg",
+    "state": "Bayern",
+    "height": 977,
+    "lat": 47.8009,
+    "lon": 11.0108,
+    "image": "output/dwd_tropennaechte_02290_hohenpeißenberg_bayern.png"
+  },
+  {
+    "id": "02444",
+    "name": "Jena (Sternwarte)",
+    "state": "Thüringen",
+    "height": 155,
+    "lat": 50.9251,
+    "lon": 11.583,
+    "image": "output/dwd_tropennaechte_02444_jena_(sternwarte)_thueringen.png"
+  },
+  {
+    "id": "02480",
+    "name": "Kahl/Main",
+    "state": "Bayern",
+    "height": 108,
+    "lat": 50.0643,
+    "lon": 8.993,
+    "image": "output/dwd_tropennaechte_02480_kahl_main_bayern.png"
+  },
+  {
+    "id": "02483",
+    "name": "Kahler Asten",
+    "state": "Nordrhein-Westfalen",
+    "height": 839,
+    "lat": 51.1803,
+    "lon": 8.4891,
+    "image": "output/dwd_tropennaechte_02483_kahler_asten_nordrhein-westfalen.png"
+  },
+  {
+    "id": "02486",
+    "name": "Kaiserslautern",
+    "state": "Rheinland-Pfalz",
+    "height": 271,
+    "lat": 49.4262,
+    "lon": 7.7557,
+    "image": "output/dwd_tropennaechte_02486_kaiserslautern_rheinland-pfalz.png"
+  },
+  {
+    "id": "02497",
+    "name": "Kall-Sistig",
+    "state": "Nordrhein-Westfalen",
+    "height": 505,
+    "lat": 50.5014,
+    "lon": 6.5264,
+    "image": "output/dwd_tropennaechte_02497_kall-sistig_nordrhein-westfalen.png"
+  },
+  {
+    "id": "02578",
+    "name": "Kirchdorf/Poel",
+    "state": "Mecklenburg-Vorpommern",
+    "height": 14,
+    "lat": 53.9995,
+    "lon": 11.4341,
+    "image": "output/dwd_tropennaechte_02578_kirchdorf_poel_mecklenburg-vorpommern.png"
+  },
+  {
+    "id": "02597",
+    "name": "Kissingen, Bad",
+    "state": "Bayern",
+    "height": 282,
+    "lat": 50.224,
+    "lon": 10.0792,
+    "image": "output/dwd_tropennaechte_02597_kissingen_bad_bayern.png"
+  },
+  {
+    "id": "02601",
+    "name": "Kleiner Feldberg/Taunus",
+    "state": "Hessen",
+    "height": 822,
+    "lat": 50.2218,
+    "lon": 8.4469,
+    "image": "output/dwd_tropennaechte_02601_kleiner_feldberg_taunus_hessen.png"
+  },
+  {
+    "id": "02629",
+    "name": "Kleve",
+    "state": "Nordrhein-Westfalen",
+    "height": 46,
+    "lat": 51.7612,
+    "lon": 6.0954,
+    "image": "output/dwd_tropennaechte_02629_kleve_nordrhein-westfalen.png"
+  },
+  {
+    "id": "02638",
+    "name": "Klippeneck",
+    "state": "Baden-Württemberg",
+    "height": 974,
+    "lat": 48.1054,
+    "lon": 8.7548,
+    "image": "output/dwd_tropennaechte_02638_klippeneck_baden-wuerttemberg.png"
+  },
+  {
+    "id": "02750",
+    "name": "Kronach",
+    "state": "Bayern",
+    "height": 310,
+    "lat": 50.2524,
+    "lon": 11.3209,
+    "image": "output/dwd_tropennaechte_02750_kronach_bayern.png"
+  },
+  {
+    "id": "02794",
+    "name": "Kyritz",
+    "state": "Brandenburg",
+    "height": 40,
+    "lat": 52.9362,
+    "lon": 12.4093,
+    "image": "output/dwd_tropennaechte_02794_kyritz_brandenburg.png"
+  },
+  {
+    "id": "02812",
+    "name": "Lahr",
+    "state": "Baden-Württemberg",
+    "height": 156,
+    "lat": 48.3647,
+    "lon": 7.828,
+    "image": "output/dwd_tropennaechte_02812_lahr_baden-wuerttemberg.png"
+  },
+  {
+    "id": "02814",
+    "name": "Merklingen",
+    "state": "Baden-Württemberg",
+    "height": 687,
+    "lat": 48.5122,
+    "lon": 9.7644,
+    "image": "output/dwd_tropennaechte_02814_merklingen_baden-wuerttemberg.png"
+  },
+  {
+    "id": "02878",
+    "name": "Lauchstädt, Bad",
+    "state": "Sachsen-Anhalt",
+    "height": 117,
+    "lat": 51.3909,
+    "lon": 11.8786,
+    "image": "output/dwd_tropennaechte_02878_lauchstädt_bad_sachsen-anhalt.png"
+  },
+  {
+    "id": "02928",
+    "name": "Leipzig-Holzhausen",
+    "state": "Sachsen",
+    "height": 138,
+    "lat": 51.3151,
+    "lon": 12.4462,
+    "image": "output/dwd_tropennaechte_02928_leipzig-holzhausen_sachsen.png"
+  },
+  {
+    "id": "02932",
+    "name": "Leipzig/Halle",
+    "state": "Sachsen",
+    "height": 131,
+    "lat": 51.4347,
+    "lon": 12.2396,
+    "image": "output/dwd_tropennaechte_02932_leipzig_halle_sachsen.png"
+  },
+  {
+    "id": "03015",
+    "name": "Lindenberg",
+    "state": "Brandenburg",
+    "height": 98,
+    "lat": 52.2085,
+    "lon": 14.118,
+    "image": "output/dwd_tropennaechte_03015_lindenberg_brandenburg.png"
+  },
+  {
+    "id": "03032",
+    "name": "List auf Sylt",
+    "state": "Schleswig-Holstein",
+    "height": 25,
+    "lat": 55.011,
+    "lon": 8.4125,
+    "image": "output/dwd_tropennaechte_03032_list_auf_sylt_schleswig-holstein.png"
+  },
+  {
+    "id": "03126",
+    "name": "Magdeburg",
+    "state": "Sachsen-Anhalt",
+    "height": 79,
+    "lat": 52.1029,
+    "lon": 11.5827,
+    "image": "output/dwd_tropennaechte_03126_magdeburg_sachsen-anhalt.png"
+  },
+  {
+    "id": "03137",
+    "name": "Mainz-Lerchenberg (ZDF)",
+    "state": "Rheinland-Pfalz",
+    "height": 199,
+    "lat": 49.9658,
+    "lon": 8.2049,
+    "image": "output/dwd_tropennaechte_03137_mainz-lerchenberg_(zdf)_rheinland-pfalz.png"
+  },
+  {
+    "id": "03164",
+    "name": "Cölbe, Kr. Marburg-Biedenkopf",
+    "state": "Hessen",
+    "height": 187,
+    "lat": 50.8492,
+    "lon": 8.7745,
+    "image": "output/dwd_tropennaechte_03164_cölbe_kr._marburg-biedenkopf_hessen.png"
+  },
+  {
+    "id": "03196",
+    "name": "Marnitz",
+    "state": "Mecklenburg-Vorpommern",
+    "height": 81,
+    "lat": 53.3221,
+    "lon": 11.9324,
+    "image": "output/dwd_tropennaechte_03196_marnitz_mecklenburg-vorpommern.png"
+  },
+  {
+    "id": "03257",
+    "name": "Mergentheim, Bad",
+    "state": "Baden-Württemberg",
+    "height": 278,
+    "lat": 49.4797,
+    "lon": 9.7832,
+    "image": "output/dwd_tropennaechte_03257_mergentheim_bad_baden-wuerttemberg.png"
+  },
+  {
+    "id": "03271",
+    "name": "Metten",
+    "state": "Bayern",
+    "height": 314,
+    "lat": 48.8548,
+    "lon": 12.9189,
+    "image": "output/dwd_tropennaechte_03271_metten_bayern.png"
+  },
+  {
+    "id": "03307",
+    "name": "Mittenwald-Buckelwiesen",
+    "state": "Bayern",
+    "height": 983,
+    "lat": 47.4814,
+    "lon": 11.2649,
+    "image": "output/dwd_tropennaechte_03307_mittenwald-buckelwiesen_bayern.png"
+  },
+  {
+    "id": "03376",
+    "name": "Müncheberg",
+    "state": "Brandenburg",
+    "height": 64,
+    "lat": 52.5176,
+    "lon": 14.1232,
+    "image": "output/dwd_tropennaechte_03376_müncheberg_brandenburg.png"
+  },
+  {
+    "id": "03402",
+    "name": "Münsingen-Apfelstetten",
+    "state": "Baden-Württemberg",
+    "height": 755,
+    "lat": 48.3851,
+    "lon": 9.4837,
+    "image": "output/dwd_tropennaechte_03402_münsingen-apfelstetten_baden-wuerttemberg.png"
+  },
+  {
+    "id": "03426",
+    "name": "Muskau, Bad",
+    "state": "Sachsen",
+    "height": 127,
+    "lat": 51.566,
+    "lon": 14.7008,
+    "image": "output/dwd_tropennaechte_03426_muskau_bad_sachsen.png"
+  },
+  {
+    "id": "03442",
+    "name": "Nauheim, Bad",
+    "state": "Hessen",
+    "height": 149,
+    "lat": 50.3574,
+    "lon": 8.7506,
+    "image": "output/dwd_tropennaechte_03442_nauheim_bad_hessen.png"
+  },
+  {
+    "id": "03490",
+    "name": "Neuenahr, Bad-Ahrweiler",
+    "state": "Rheinland-Pfalz",
+    "height": 111,
+    "lat": 50.5346,
+    "lon": 7.0853,
+    "image": "output/dwd_tropennaechte_03490_neuenahr_bad-ahrweiler_rheinland-pfalz.png"
+  },
+  {
+    "id": "03527",
+    "name": "Neukirchen-Hauptschwenda",
+    "state": "Hessen",
+    "height": 500,
+    "lat": 50.8923,
+    "lon": 9.405,
+    "image": "output/dwd_tropennaechte_03527_neukirchen-hauptschwenda_hessen.png"
+  },
+  {
+    "id": "03612",
+    "name": "Nienburg",
+    "state": "Niedersachsen",
+    "height": 25,
+    "lat": 52.6711,
+    "lon": 9.2229,
+    "image": "output/dwd_tropennaechte_03612_nienburg_niedersachsen.png"
+  },
+  {
+    "id": "03621",
+    "name": "Reimlingen",
+    "state": "Bayern",
+    "height": 436,
+    "lat": 48.8253,
+    "lon": 10.5066,
+    "image": "output/dwd_tropennaechte_03621_reimlingen_bayern.png"
+  },
+  {
+    "id": "03631",
+    "name": "Norderney",
+    "state": "Niedersachsen",
+    "height": 12,
+    "lat": 53.7123,
+    "lon": 7.1519,
+    "image": "output/dwd_tropennaechte_03631_norderney_niedersachsen.png"
+  },
+  {
+    "id": "03668",
+    "name": "Nürnberg",
+    "state": "Bayern",
+    "height": 314,
+    "lat": 49.503,
+    "lon": 11.0549,
+    "image": "output/dwd_tropennaechte_03668_nürnberg_bayern.png"
+  },
+  {
+    "id": "03679",
+    "name": "Kiefersfelden-Gach",
+    "state": "Bayern",
+    "height": 518,
+    "lat": 47.6187,
+    "lon": 12.1665,
+    "image": "output/dwd_tropennaechte_03679_kiefersfelden-gach_bayern.png"
+  },
+  {
+    "id": "03730",
+    "name": "Oberstdorf",
+    "state": "Bayern",
+    "height": 806,
+    "lat": 47.3984,
+    "lon": 10.2759,
+    "image": "output/dwd_tropennaechte_03730_oberstdorf_bayern.png"
+  },
+  {
+    "id": "03739",
+    "name": "Oberviechtach",
+    "state": "Bayern",
+    "height": 596,
+    "lat": 49.4521,
+    "lon": 12.4365,
+    "image": "output/dwd_tropennaechte_03739_oberviechtach_bayern.png"
+  },
+  {
+    "id": "03761",
+    "name": "Öhringen",
+    "state": "Baden-Württemberg",
+    "height": 276,
+    "lat": 49.207,
+    "lon": 9.5176,
+    "image": "output/dwd_tropennaechte_03761_öhringen_baden-wuerttemberg.png"
+  },
+  {
+    "id": "03811",
+    "name": "Oschatz",
+    "state": "Sachsen",
+    "height": 151,
+    "lat": 51.296,
+    "lon": 13.0928,
+    "image": "output/dwd_tropennaechte_03811_oschatz_sachsen.png"
+  },
+  {
+    "id": "03875",
+    "name": "Parsberg/Oberpfalz-Eglwang",
+    "state": "Bayern",
+    "height": 549,
+    "lat": 49.151,
+    "lon": 11.6897,
+    "image": "output/dwd_tropennaechte_03875_parsberg_oberpfalz-eglwang_bayern.png"
+  },
+  {
+    "id": "03939",
+    "name": "Pirmasens",
+    "state": "Rheinland-Pfalz",
+    "height": 382,
+    "lat": 49.1912,
+    "lon": 7.5879,
+    "image": "output/dwd_tropennaechte_03939_pirmasens_rheinland-pfalz.png"
+  },
+  {
+    "id": "03946",
+    "name": "Plauen",
+    "state": "Sachsen",
+    "height": 387,
+    "lat": 50.4818,
+    "lon": 12.13,
+    "image": "output/dwd_tropennaechte_03946_plauen_sachsen.png"
+  },
+  {
+    "id": "03987",
+    "name": "Potsdam",
+    "state": "Brandenburg",
+    "height": 81,
+    "lat": 52.3812,
+    "lon": 13.0622,
+    "image": "output/dwd_tropennaechte_03987_potsdam_brandenburg.png"
+  },
+  {
+    "id": "04024",
+    "name": "Putbus",
+    "state": "Mecklenburg-Vorpommern",
+    "height": 40,
+    "lat": 54.3643,
+    "lon": 13.4771,
+    "image": "output/dwd_tropennaechte_04024_putbus_mecklenburg-vorpommern.png"
+  },
+  {
+    "id": "04032",
+    "name": "Quedlinburg",
+    "state": "Sachsen-Anhalt",
+    "height": 142,
+    "lat": 51.7953,
+    "lon": 11.132,
+    "image": "output/dwd_tropennaechte_04032_quedlinburg_sachsen-anhalt.png"
+  },
+  {
+    "id": "04094",
+    "name": "Weingarten, Kr. Ravensburg",
+    "state": "Baden-Württemberg",
+    "height": 441,
+    "lat": 47.8062,
+    "lon": 9.6206,
+    "image": "output/dwd_tropennaechte_04094_weingarten_kr._ravensburg_baden-wuerttemberg.png"
+  },
+  {
+    "id": "04104",
+    "name": "Regensburg",
+    "state": "Bayern",
+    "height": 365,
+    "lat": 49.0425,
+    "lon": 12.1019,
+    "image": "output/dwd_tropennaechte_04104_regensburg_bayern.png"
+  },
+  {
+    "id": "04177",
+    "name": "Rheinstetten",
+    "state": "Baden-Württemberg",
+    "height": 116,
+    "lat": 48.9726,
+    "lon": 8.3301,
+    "image": "output/dwd_tropennaechte_04177_rheinstetten_baden-wuerttemberg.png"
+  },
+  {
+    "id": "04271",
+    "name": "Rostock-Warnemünde",
+    "state": "Mecklenburg-Vorpommern",
+    "height": 5,
+    "lat": 54.1803,
+    "lon": 12.0808,
+    "image": "output/dwd_tropennaechte_04271_rostock-warnemünde_mecklenburg-vorpommern.png"
+  },
+  {
+    "id": "04275",
+    "name": "Rotenburg (Wümme)",
+    "state": "Niedersachsen",
+    "height": 32,
+    "lat": 53.1289,
+    "lon": 9.3398,
+    "image": "output/dwd_tropennaechte_04275_rotenburg_(wümme)_niedersachsen.png"
+  },
+  {
+    "id": "04287",
+    "name": "Rothenburg ob der Tauber",
+    "state": "Bayern",
+    "height": 415,
+    "lat": 49.3849,
+    "lon": 10.1732,
+    "image": "output/dwd_tropennaechte_04287_rothenburg_ob_der_tauber_bayern.png"
+  },
+  {
+    "id": "04301",
+    "name": "Kreuznach, Bad",
+    "state": "Rheinland-Pfalz",
+    "height": 102,
+    "lat": 49.8502,
+    "lon": 7.871,
+    "image": "output/dwd_tropennaechte_04301_kreuznach_bad_rheinland-pfalz.png"
+  },
+  {
+    "id": "04371",
+    "name": "Salzuflen, Bad",
+    "state": "Nordrhein-Westfalen",
+    "height": 135,
+    "lat": 52.1042,
+    "lon": 8.7521,
+    "image": "output/dwd_tropennaechte_04371_salzuflen_bad_nordrhein-westfalen.png"
+  },
+  {
+    "id": "04445",
+    "name": "Wernigerode-Schierke",
+    "state": "Sachsen-Anhalt",
+    "height": 614,
+    "lat": 51.7659,
+    "lon": 10.6533,
+    "image": "output/dwd_tropennaechte_04445_wernigerode-schierke_sachsen-anhalt.png"
+  },
+  {
+    "id": "04466",
+    "name": "Schleswig",
+    "state": "Schleswig-Holstein",
+    "height": 43,
+    "lat": 54.5275,
+    "lon": 9.5487,
+    "image": "output/dwd_tropennaechte_04466_schleswig_schleswig-holstein.png"
+  },
+  {
+    "id": "04501",
+    "name": "Schmücke",
+    "state": "Thüringen",
+    "height": 938,
+    "lat": 50.6545,
+    "lon": 10.7696,
+    "image": "output/dwd_tropennaechte_04501_schmücke_thueringen.png"
+  },
+  {
+    "id": "04605",
+    "name": "Schwarzburg",
+    "state": "Thüringen",
+    "height": 277,
+    "lat": 50.6441,
+    "lon": 11.1936,
+    "image": "output/dwd_tropennaechte_04605_schwarzburg_thueringen.png"
+  },
+  {
+    "id": "04625",
+    "name": "Schwerin",
+    "state": "Mecklenburg-Vorpommern",
+    "height": 59,
+    "lat": 53.6424,
+    "lon": 11.3871,
+    "image": "output/dwd_tropennaechte_04625_schwerin_mecklenburg-vorpommern.png"
+  },
+  {
+    "id": "04651",
+    "name": "Seesen",
+    "state": "Niedersachsen",
+    "height": 189,
+    "lat": 51.904,
+    "lon": 10.1885,
+    "image": "output/dwd_tropennaechte_04651_seesen_niedersachsen.png"
+  },
+  {
+    "id": "04745",
+    "name": "Soltau",
+    "state": "Niedersachsen",
+    "height": 75,
+    "lat": 52.9604,
+    "lon": 9.793,
+    "image": "output/dwd_tropennaechte_04745_soltau_niedersachsen.png"
+  },
+  {
+    "id": "04748",
+    "name": "Sondershausen",
+    "state": "Thüringen",
+    "height": 185,
+    "lat": 51.3691,
+    "lon": 10.88,
+    "image": "output/dwd_tropennaechte_04748_sondershausen_thueringen.png"
+  },
+  {
+    "id": "04878",
+    "name": "Oberharz am Brocken-Stiege",
+    "state": "Sachsen-Anhalt",
+    "height": 505,
+    "lat": 51.6647,
+    "lon": 10.881,
+    "image": "output/dwd_tropennaechte_04878_oberharz_am_brocken-stiege_sachsen-anhalt.png"
+  },
+  {
+    "id": "04887",
+    "name": "Stötten",
+    "state": "Baden-Württemberg",
+    "height": 734,
+    "lat": 48.6656,
+    "lon": 9.8648,
+    "image": "output/dwd_tropennaechte_04887_stötten_baden-wuerttemberg.png"
+  },
+  {
+    "id": "04911",
+    "name": "Straubing",
+    "state": "Bayern",
+    "height": 351,
+    "lat": 48.8275,
+    "lon": 12.5597,
+    "image": "output/dwd_tropennaechte_04911_straubing_bayern.png"
+  },
+  {
+    "id": "05009",
+    "name": "Teterow",
+    "state": "Mecklenburg-Vorpommern",
+    "height": 37,
+    "lat": 53.761,
+    "lon": 12.5574,
+    "image": "output/dwd_tropennaechte_05009_teterow_mecklenburg-vorpommern.png"
+  },
+  {
+    "id": "05017",
+    "name": "Teuschnitz",
+    "state": "Bayern",
+    "height": 633,
+    "lat": 50.4002,
+    "lon": 11.3888,
+    "image": "output/dwd_tropennaechte_05017_teuschnitz_bayern.png"
+  },
+  {
+    "id": "05099",
+    "name": "Trier-Zewen",
+    "state": "Rheinland-Pfalz",
+    "height": 132,
+    "lat": 49.7326,
+    "lon": 6.6131,
+    "image": "output/dwd_tropennaechte_05099_trier-zewen_rheinland-pfalz.png"
+  },
+  {
+    "id": "05100",
+    "name": "Trier-Petrisberg",
+    "state": "Rheinland-Pfalz",
+    "height": 261,
+    "lat": 49.7479,
+    "lon": 6.6583,
+    "image": "output/dwd_tropennaechte_05100_trier-petrisberg_rheinland-pfalz.png"
+  },
+  {
+    "id": "05111",
+    "name": "Trostberg",
+    "state": "Bayern",
+    "height": 560,
+    "lat": 48.0311,
+    "lon": 12.5396,
+    "image": "output/dwd_tropennaechte_05111_trostberg_bayern.png"
+  },
+  {
+    "id": "05142",
+    "name": "Ueckermünde",
+    "state": "Mecklenburg-Vorpommern",
+    "height": 1,
+    "lat": 53.7445,
+    "lon": 14.0698,
+    "image": "output/dwd_tropennaechte_05142_ueckermünde_mecklenburg-vorpommern.png"
+  },
+  {
+    "id": "05229",
+    "name": "Villingen-Schwenningen",
+    "state": "Baden-Württemberg",
+    "height": 719,
+    "lat": 48.0453,
+    "lon": 8.4608,
+    "image": "output/dwd_tropennaechte_05229_villingen-schwenningen_baden-wuerttemberg.png"
+  },
+  {
+    "id": "05335",
+    "name": "Waltershausen",
+    "state": "Thüringen",
+    "height": 352,
+    "lat": 50.8963,
+    "lon": 10.5483,
+    "image": "output/dwd_tropennaechte_05335_waltershausen_thueringen.png"
+  },
+  {
+    "id": "05349",
+    "name": "Waren (Müritz)",
+    "state": "Mecklenburg-Vorpommern",
+    "height": 73,
+    "lat": 53.5196,
+    "lon": 12.6654,
+    "image": "output/dwd_tropennaechte_05349_waren_(müritz)_mecklenburg-vorpommern.png"
+  },
+  {
+    "id": "05371",
+    "name": "Wasserkuppe",
+    "state": "Hessen",
+    "height": 920,
+    "lat": 50.4973,
+    "lon": 9.9427,
+    "image": "output/dwd_tropennaechte_05371_wasserkuppe_hessen.png"
+  },
+  {
+    "id": "05397",
+    "name": "Weiden",
+    "state": "Bayern",
+    "height": 440,
+    "lat": 49.6662,
+    "lon": 12.1844,
+    "image": "output/dwd_tropennaechte_05397_weiden_bayern.png"
+  },
+  {
+    "id": "05404",
+    "name": "Weihenstephan-Dürnast",
+    "state": "Bayern",
+    "height": 477,
+    "lat": 48.4024,
+    "lon": 11.6946,
+    "image": "output/dwd_tropennaechte_05404_weihenstephan-dürnast_bayern.png"
+  },
+  {
+    "id": "05424",
+    "name": "Weimar-Schöndorf",
+    "state": "Thüringen",
+    "height": 328,
+    "lat": 51.0177,
+    "lon": 11.3544,
+    "image": "output/dwd_tropennaechte_05424_weimar-schöndorf_thueringen.png"
+  },
+  {
+    "id": "05440",
+    "name": "Weißenburg-Emetzheim",
+    "state": "Bayern",
+    "height": 439,
+    "lat": 49.0115,
+    "lon": 10.9308,
+    "image": "output/dwd_tropennaechte_05440_weißenburg-emetzheim_bayern.png"
+  },
+  {
+    "id": "05490",
+    "name": "Wernigerode",
+    "state": "Sachsen-Anhalt",
+    "height": 233,
+    "lat": 51.8454,
+    "lon": 10.7686,
+    "image": "output/dwd_tropennaechte_05490_wernigerode_sachsen-anhalt.png"
+  },
+  {
+    "id": "05516",
+    "name": "Fehmarn",
+    "state": "Schleswig-Holstein",
+    "height": 3,
+    "lat": 54.5283,
+    "lon": 11.0606,
+    "image": "output/dwd_tropennaechte_05516_fehmarn_schleswig-holstein.png"
+  },
+  {
+    "id": "05629",
+    "name": "Wittenberg",
+    "state": "Sachsen-Anhalt",
+    "height": 105,
+    "lat": 51.8891,
+    "lon": 12.6446,
+    "image": "output/dwd_tropennaechte_05629_wittenberg_sachsen-anhalt.png"
+  },
+  {
+    "id": "05692",
+    "name": "Worms",
+    "state": "Rheinland-Pfalz",
+    "height": 88,
+    "lat": 49.6051,
+    "lon": 8.3659,
+    "image": "output/dwd_tropennaechte_05692_worms_rheinland-pfalz.png"
+  },
+  {
+    "id": "05705",
+    "name": "Würzburg",
+    "state": "Bayern",
+    "height": 268,
+    "lat": 49.7704,
+    "lon": 9.9576,
+    "image": "output/dwd_tropennaechte_05705_würzburg_bayern.png"
+  },
+  {
+    "id": "05717",
+    "name": "Wuppertal-Buchenhofen",
+    "state": "Nordrhein-Westfalen",
+    "height": 134,
+    "lat": 51.2256,
+    "lon": 7.1052,
+    "image": "output/dwd_tropennaechte_05717_wuppertal-buchenhofen_nordrhein-westfalen.png"
+  },
+  {
+    "id": "05745",
+    "name": "Zehdenick",
+    "state": "Brandenburg",
+    "height": 51,
+    "lat": 52.9664,
+    "lon": 13.3268,
+    "image": "output/dwd_tropennaechte_05745_zehdenick_brandenburg.png"
+  },
+  {
+    "id": "05792",
+    "name": "Zugspitze",
+    "state": "Bayern",
+    "height": 2956,
+    "lat": 47.421,
+    "lon": 10.9848,
+    "image": "output/dwd_tropennaechte_05792_zugspitze_bayern.png"
+  },
+  {
+    "id": "05797",
+    "name": "Lichtentanne",
+    "state": "Sachsen",
+    "height": 349,
+    "lat": 50.6879,
+    "lon": 12.4329,
+    "image": "output/dwd_tropennaechte_05797_lichtentanne_sachsen.png"
+  },
+  {
+    "id": "05906",
+    "name": "Mannheim",
+    "state": "Baden-Württemberg",
+    "height": 98,
+    "lat": 49.5063,
+    "lon": 8.5584,
+    "image": "output/dwd_tropennaechte_05906_mannheim_baden-wuerttemberg.png"
+  },
+  {
+    "id": "05941",
+    "name": "Reit im Winkl-Groißenbach",
+    "state": "Bayern",
+    "height": 680,
+    "lat": 47.6721,
+    "lon": 12.4756,
+    "image": "output/dwd_tropennaechte_05941_reit_im_winkl-groißenbach_bayern.png"
+  },
+  {
+    "id": "06314",
+    "name": "Nossen",
+    "state": "Sachsen",
+    "height": 306,
+    "lat": 51.0507,
+    "lon": 13.3003,
+    "image": "output/dwd_tropennaechte_06314_nossen_sachsen.png"
+  }
+]

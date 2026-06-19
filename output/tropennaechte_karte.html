@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tropennächte (≥ 20 °C) der letzten zwei Jahre</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+<style>
+  html, body { margin: 0; height: 100%; font-family: system-ui, sans-serif; }
+  body { display: flex; flex-direction: column; }
+  #map { flex: 1; min-height: 0; width: 100%; }
+  .credits { padding: 8px 14px; font-size: 12px; color: #555; background: #f4f4f5;
+    border-top: 1px solid #e3e3e6; }
+  .credits a { color: #555; }
+  .legend { background: #fff; padding: 8px 10px; border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0,0,0,.3); font-size: 13px; line-height: 1.5; }
+  .legend i { display: inline-block; width: 14px; height: 14px; margin-right: 6px;
+    border-radius: 50%; opacity: .85; }
+  .popup h3 { margin: 0 0 4px; font-size: 15px; }
+  .popup .meta { color: #555; font-size: 12px; margin-bottom: 6px; }
+  .popup table { border-collapse: collapse; font-size: 12px; max-height: 220px;
+    display: block; overflow-y: auto; }
+  .popup td { padding: 1px 8px 1px 0; white-space: nowrap; }
+  .popup td.t { text-align: right; font-variant-numeric: tabular-nums; }
+</style>
+</head>
+<body>
+<div id="map"></div>
+<footer class="credits">
+  Tropennächte ≥ 20 °C · Zeitraum 2024-05-28 bis 2026-05-27 ·
+  Datenquelle: <a href="https://opendata.dwd.de/" target="_blank" rel="noopener">Deutscher Wetterdienst (DWD)</a>,
+  Klimadaten Deutschland (<a href="https://www.gesetze-im-internet.de/geonutzv/" target="_blank" rel="noopener">GeoNutzV</a>) ·
+  Karte: <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>
+</footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script>
+const DATA = [{"id": "00377", "name": "Bergzabern, Bad", "state": "Rheinland-Pfalz", "height": 210, "lat": 49.107, "lon": 7.9967, "count": 11, "max": 23.3, "nights": [{"d": "2024-07-19", "t": 20.7}, {"d": "2024-07-21", "t": 20.6}, {"d": "2024-08-12", "t": 21.4}, {"d": "2024-08-13", "t": 20.8}, {"d": "2024-09-01", "t": 20.9}, {"d": "2025-06-30", "t": 22.2}, {"d": "2025-07-01", "t": 23.3}, {"d": "2025-07-02", "t": 21.6}, {"d": "2025-08-13", "t": 21.3}, {"d": "2025-08-14", "t": 20.1}, {"d": "2025-08-15", "t": 21.2}]}, {"id": "01759", "name": "Greifswalder Oie", "state": "Mecklenburg-Vorpommern", "height": 11, "lat": 54.2437, "lon": 13.9104, "count": 8, "max": 20.9, "nights": [{"d": "2024-08-15", "t": 20.0}, {"d": "2024-08-29", "t": 20.4}, {"d": "2024-09-04", "t": 20.9}, {"d": "2024-09-05", "t": 20.8}, {"d": "2024-09-07", "t": 20.0}, {"d": "2024-09-08", "t": 20.5}, {"d": "2025-08-14", "t": 20.0}, {"d": "2025-08-15", "t": 20.1}]}, {"id": "00314", "name": "Kubschütz, Kr. Bautzen", "state": "Sachsen", "height": 234, "lat": 51.1604, "lon": 14.5042, "count": 5, "max": 22.0, "nights": [{"d": "2024-07-21", "t": 21.1}, {"d": "2024-08-24", "t": 20.1}, {"d": "2024-08-29", "t": 22.0}, {"d": "2024-09-08", "t": 21.9}, {"d": "2025-09-20", "t": 20.9}]}, {"id": "03137", "name": "Mainz-Lerchenberg (ZDF)", "state": "Rheinland-Pfalz", "height": 199, "lat": 49.9658, "lon": 8.2049, "count": 5, "max": 21.7, "nights": [{"d": "2024-08-13", "t": 20.1}, {"d": "2025-06-30", "t": 20.1}, {"d": "2025-07-01", "t": 21.2}, {"d": "2025-07-02", "t": 21.7}, {"d": "2025-08-15", "t": 21.6}]}, {"id": "04887", "name": "Stötten", "state": "Baden-Württemberg", "height": 734, "lat": 48.6656, "lon": 9.8648, "count": 5, "max": 20.7, "nights": [{"d": "2024-08-29", "t": 20.7}, {"d": "2024-08-30", "t": 20.0}, {"d": "2025-07-02", "t": 20.0}, {"d": "2025-08-13", "t": 20.6}, {"d": "2025-08-15", "t": 20.6}]}, {"id": "00433", "name": "Berlin-Tempelhof", "state": "Berlin", "height": 48, "lat": 52.4676, "lon": 13.402, "count": 4, "max": 20.8, "nights": [{"d": "2024-06-27", "t": 20.8}, {"d": "2024-07-10", "t": 20.1}, {"d": "2024-08-29", "t": 20.4}, {"d": "2024-09-05", "t": 20.2}]}, {"id": "00853", "name": "Chemnitz", "state": "Sachsen", "height": 416, "lat": 50.7913, "lon": 12.872, "count": 3, "max": 20.6, "nights": [{"d": "2024-08-29", "t": 20.0}, {"d": "2024-09-05", "t": 20.6}, {"d": "2025-08-15", "t": 20.1}]}, {"id": "01580", "name": "Geisenheim", "state": "Hessen", "height": 111, "lat": 49.9859, "lon": 7.9548, "count": 3, "max": 21.8, "nights": [{"d": "2024-08-13", "t": 20.1}, {"d": "2025-06-26", "t": 20.2}, {"d": "2025-08-15", "t": 21.8}]}, {"id": "02290", "name": "Hohenpeißenberg", "state": "Bayern", "height": 977, "lat": 47.8009, "lon": 11.0108, "count": 3, "max": 22.3, "nights": [{"d": "2024-06-29", "t": 20.4}, {"d": "2025-06-30", "t": 20.5}, {"d": "2025-08-13", "t": 22.3}]}, {"id": "02601", "name": "Kleiner Feldberg/Taunus", "state": "Hessen", "height": 822, "lat": 50.2218, "lon": 8.4469, "count": 3, "max": 23.0, "nights": [{"d": "2024-07-31", "t": 20.0}, {"d": "2025-08-13", "t": 20.7}, {"d": "2025-08-14", "t": 23.0}]}, {"id": "02812", "name": "Lahr", "state": "Baden-Württemberg", "height": 156, "lat": 48.3647, "lon": 7.828, "count": 3, "max": 20.9, "nights": [{"d": "2024-07-21", "t": 20.2}, {"d": "2025-06-26", "t": 20.9}, {"d": "2025-07-01", "t": 20.3}]}, {"id": "03939", "name": "Pirmasens", "state": "Rheinland-Pfalz", "height": 382, "lat": 49.1912, "lon": 7.5879, "count": 3, "max": 21.0, "nights": [{"d": "2024-08-12", "t": 21.0}, {"d": "2025-06-30", "t": 21.0}, {"d": "2025-07-02", "t": 20.2}]}, {"id": "04177", "name": "Rheinstetten", "state": "Baden-Württemberg", "height": 116, "lat": 48.9726, "lon": 8.3301, "count": 3, "max": 21.1, "nights": [{"d": "2024-09-01", "t": 20.4}, {"d": "2025-06-30", "t": 20.5}, {"d": "2025-07-01", "t": 21.1}]}, {"id": "04301", "name": "Kreuznach, Bad", "state": "Rheinland-Pfalz", "height": 102, "lat": 49.8502, "lon": 7.871, "count": 3, "max": 20.7, "nights": [{"d": "2024-08-13", "t": 20.7}, {"d": "2025-06-26", "t": 20.1}, {"d": "2025-08-15", "t": 20.2}]}, {"id": "00330", "name": "Oberzent-Beerfelden", "state": "Hessen", "height": 455, "lat": 49.5617, "lon": 8.9673, "count": 2, "max": 21.5, "nights": [{"d": "2025-07-02", "t": 20.9}, {"d": "2025-08-14", "t": 21.5}]}, {"id": "00555", "name": "Bochum", "state": "Nordrhein-Westfalen", "height": 110, "lat": 51.5026, "lon": 7.2289, "count": 2, "max": 20.4, "nights": [{"d": "2024-08-13", "t": 20.4}, {"d": "2025-08-14", "t": 20.3}]}, {"id": "01048", "name": "Dresden-Klotzsche", "state": "Sachsen", "height": 228, "lat": 51.1278, "lon": 13.7543, "count": 2, "max": 20.7, "nights": [{"d": "2024-08-29", "t": 20.1}, {"d": "2024-09-08", "t": 20.7}]}, {"id": "01420", "name": "Frankfurt/Main", "state": "Hessen", "height": 100, "lat": 50.0259, "lon": 8.5213, "count": 2, "max": 21.1, "nights": [{"d": "2025-06-30", "t": 21.1}, {"d": "2025-07-01", "t": 20.2}]}, {"id": "01443", "name": "Freiburg", "state": "Baden-Württemberg", "height": 237, "lat": 48.0232, "lon": 7.8343, "count": 2, "max": 20.5, "nights": [{"d": "2024-08-12", "t": 20.5}, {"d": "2025-07-01", "t": 20.1}]}, {"id": "02483", "name": "Kahler Asten", "state": "Nordrhein-Westfalen", "height": 839, "lat": 51.1803, "lon": 8.4891, "count": 2, "max": 21.7, "nights": [{"d": "2025-08-13", "t": 20.8}, {"d": "2025-08-14", "t": 21.7}]}, {"id": "02486", "name": "Kaiserslautern", "state": "Rheinland-Pfalz", "height": 271, "lat": 49.4262, "lon": 7.7557, "count": 2, "max": 20.1, "nights": [{"d": "2024-07-10", "t": 20.1}, {"d": "2024-08-13", "t": 20.0}]}, {"id": "03015", "name": "Lindenberg", "state": "Brandenburg", "height": 98, "lat": 52.2085, "lon": 14.118, "count": 2, "max": 20.9, "nights": [{"d": "2024-08-29", "t": 20.9}, {"d": "2024-09-04", "t": 20.3}]}, {"id": "05100", "name": "Trier-Petrisberg", "state": "Rheinland-Pfalz", "height": 261, "lat": 49.7479, "lon": 6.6583, "count": 2, "max": 20.1, "nights": [{"d": "2024-08-13", "t": 20.1}, {"d": "2025-08-15", "t": 20.1}]}, {"id": "05629", "name": "Wittenberg", "state": "Sachsen-Anhalt", "height": 105, "lat": 51.8891, "lon": 12.6446, "count": 2, "max": 20.3, "nights": [{"d": "2024-06-27", "t": 20.3}, {"d": "2024-09-05", "t": 20.0}]}, {"id": "05692", "name": "Worms", "state": "Rheinland-Pfalz", "height": 88, "lat": 49.6051, "lon": 8.3659, "count": 2, "max": 20.4, "nights": [{"d": "2025-06-30", "t": 20.4}, {"d": "2025-07-01", "t": 20.1}]}, {"id": "00403", "name": "Berlin-Dahlem (FU)", "state": "Berlin", "height": 51, "lat": 52.4537, "lon": 13.3017, "count": 1, "max": 20.5, "nights": [{"d": "2024-06-27", "t": 20.5}]}, {"id": "00596", "name": "Boltenhagen", "state": "Mecklenburg-Vorpommern", "height": 15, "lat": 54.0027, "lon": 11.1908, "count": 1, "max": 20.0, "nights": [{"d": "2024-09-06", "t": 20.0}]}, {"id": "00701", "name": "Bremerhaven", "state": "Bremen", "height": 7, "lat": 53.5332, "lon": 8.5761, "count": 1, "max": 20.2, "nights": [{"d": "2024-08-14", "t": 20.2}]}, {"id": "00722", "name": "Brocken", "state": "Sachsen-Anhalt", "height": 1135, "lat": 51.7986, "lon": 10.6183, "count": 1, "max": 20.2, "nights": [{"d": "2025-08-14", "t": 20.2}]}, {"id": "00880", "name": "Cottbus", "state": "Brandenburg", "height": 69, "lat": 51.7759, "lon": 14.3168, "count": 1, "max": 20.8, "nights": [{"d": "2024-07-10", "t": 20.8}]}, {"id": "00891", "name": "Cuxhaven", "state": "Niedersachsen", "height": 5, "lat": 53.8712, "lon": 8.7058, "count": 1, "max": 20.4, "nights": [{"d": "2024-08-14", "t": 20.4}]}, {"id": "01050", "name": "Dresden-Hosterwitz", "state": "Sachsen", "height": 112, "lat": 51.0221, "lon": 13.847, "count": 1, "max": 20.2, "nights": [{"d": "2025-06-29", "t": 20.2}]}, {"id": "01279", "name": "Möhrendorf-Kleinseebach", "state": "Bayern", "height": 268, "lat": 49.6497, "lon": 11.0075, "count": 1, "max": 20.5, "nights": [{"d": "2024-08-14", "t": 20.5}]}, {"id": "01297", "name": "Eschwege", "state": "Hessen", "height": 156, "lat": 51.2041, "lon": 10.0138, "count": 1, "max": 20.2, "nights": [{"d": "2024-08-14", "t": 20.2}]}, {"id": "01303", "name": "Essen-Bredeney", "state": "Nordrhein-Westfalen", "height": 150, "lat": 51.4041, "lon": 6.9677, "count": 1, "max": 22.0, "nights": [{"d": "2025-08-13", "t": 22.0}]}, {"id": "01327", "name": "Weilerswist-Lommersum", "state": "Nordrhein-Westfalen", "height": 147, "lat": 50.7119, "lon": 6.7905, "count": 1, "max": 20.1, "nights": [{"d": "2024-08-13", "t": 20.1}]}, {"id": "01346", "name": "Feldberg/Schwarzwald", "state": "Baden-Württemberg", "height": 1486, "lat": 47.8748, "lon": 8.0038, "count": 1, "max": 21.2, "nights": [{"d": "2025-08-13", "t": 21.2}]}, {"id": "01411", "name": "Birx/Rhön", "state": "Thüringen", "height": 747, "lat": 50.5309, "lon": 10.0479, "count": 1, "max": 20.8, "nights": [{"d": "2025-08-14", "t": 20.8}]}, {"id": "02794", "name": "Kyritz", "state": "Brandenburg", "height": 40, "lat": 52.9362, "lon": 12.4093, "count": 1, "max": 20.2, "nights": [{"d": "2024-09-05", "t": 20.2}]}, {"id": "03442", "name": "Nauheim, Bad", "state": "Hessen", "height": 149, "lat": 50.3574, "lon": 8.7506, "count": 1, "max": 21.8, "nights": [{"d": "2025-08-15", "t": 21.8}]}, {"id": "03739", "name": "Oberviechtach", "state": "Bayern", "height": 596, "lat": 49.4521, "lon": 12.4365, "count": 1, "max": 20.8, "nights": [{"d": "2025-08-15", "t": 20.8}]}, {"id": "04024", "name": "Putbus", "state": "Mecklenburg-Vorpommern", "height": 40, "lat": 54.3643, "lon": 13.4771, "count": 1, "max": 20.1, "nights": [{"d": "2024-09-04", "t": 20.1}]}, {"id": "04104", "name": "Regensburg", "state": "Bayern", "height": 365, "lat": 49.0425, "lon": 12.1019, "count": 1, "max": 20.0, "nights": [{"d": "2024-07-10", "t": 20.0}]}, {"id": "04371", "name": "Salzuflen, Bad", "state": "Nordrhein-Westfalen", "height": 135, "lat": 52.1042, "lon": 8.7521, "count": 1, "max": 20.3, "nights": [{"d": "2024-08-13", "t": 20.3}]}, {"id": "05017", "name": "Teuschnitz", "state": "Bayern", "height": 633, "lat": 50.4002, "lon": 11.3888, "count": 1, "max": 20.2, "nights": [{"d": "2025-08-14", "t": 20.2}]}, {"id": "05142", "name": "Ueckermünde", "state": "Mecklenburg-Vorpommern", "height": 1, "lat": 53.7445, "lon": 14.0698, "count": 1, "max": 20.1, "nights": [{"d": "2024-09-05", "t": 20.1}]}, {"id": "05349", "name": "Waren (Müritz)", "state": "Mecklenburg-Vorpommern", "height": 73, "lat": 53.5196, "lon": 12.6654, "count": 1, "max": 20.5, "nights": [{"d": "2024-09-04", "t": 20.5}]}, {"id": "05371", "name": "Wasserkuppe", "state": "Hessen", "height": 920, "lat": 50.4973, "lon": 9.9427, "count": 1, "max": 20.8, "nights": [{"d": "2025-08-14", "t": 20.8}]}, {"id": "05490", "name": "Wernigerode", "state": "Sachsen-Anhalt", "height": 233, "lat": 51.8454, "lon": 10.7686, "count": 1, "max": 20.7, "nights": [{"d": "2024-08-13", "t": 20.7}]}, {"id": "05717", "name": "Wuppertal-Buchenhofen", "state": "Nordrhein-Westfalen", "height": 134, "lat": 51.2256, "lon": 7.1052, "count": 1, "max": 20.0, "nights": [{"d": "2024-08-13", "t": 20.0}]}, {"id": "05906", "name": "Mannheim", "state": "Baden-Württemberg", "height": 98, "lat": 49.5063, "lon": 8.5584, "count": 1, "max": 20.1, "nights": [{"d": "2024-08-13", "t": 20.1}]}];
+const map = L.map('map').setView([51.2, 10.4], 6);
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  maxZoom: 18,
+  attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> · '
+    + 'Daten: <a href="https://opendata.dwd.de/">Deutscher Wetterdienst (DWD)</a> (GeoNutzV)'
+}).addTo(map);
+
+function color(c) {
+  return c > 8 ? '#3f007d' : c > 4 ? '#6a51a3' :
+         c > 2 ? '#9e9ac8' : '#cbc9e2';
+}
+function radius(c) { return Math.max(6, Math.min(22, 5 + Math.sqrt(c) * 3)); }
+
+DATA.forEach(s => {
+  const rows = s.nights.map(d =>
+    `<tr><td>${d.d}</td><td class="t">${d.t.toFixed(1).replace('.', ',')} °C</td></tr>`
+  ).join('');
+  const html = `<div class="popup"><h3>${s.name}</h3>
+    <div class="meta">${s.state} · ${s.id} · ${s.height} m</div>
+    <div class="meta"><strong>${s.count}</strong> Tropennächte · Max. ${s.max.toFixed(1).replace('.', ',')} °C</div>
+    <table>${rows}</table></div>`;
+  L.circleMarker([s.lat, s.lon], {
+    radius: radius(s.count), color: '#3f007d', weight: 1,
+    fillColor: color(s.count), fillOpacity: .85
+  }).addTo(map).bindPopup(html, { maxWidth: 320 })
+    .bindTooltip(`${s.name}: ${s.count}`, { direction: 'top' });
+});
+
+const legend = L.control({ position: 'bottomright' });
+legend.onAdd = function () {
+  const div = L.DomUtil.create('div', 'legend');
+  div.innerHTML = '<strong>Tropennächte ≥ 20 °C</strong><br>'
+    + '<span>2024-05-28 – 2026-05-27</span><br>'
+    + '<i style="background:#cbc9e2"></i>1–2<br>'
+    + '<i style="background:#9e9ac8"></i>3–4<br>'
+    + '<i style="background:#6a51a3"></i>5–8<br>'
+    + '<i style="background:#3f007d"></i>&gt;8';
+  return div;
+};
+legend.addTo(map);
+</script>
+</body>
+</html>
